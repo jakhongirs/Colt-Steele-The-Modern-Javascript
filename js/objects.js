@@ -104,3 +104,16 @@ const shoppingCart = [
 
 /* Reference type degan narsa ham bor
 Bu degani we cannot easily compare values in arrays. */
+
+
+
+const max = (...numbers) => {
+  let maxNumber = numbers[0]
+
+  for (var i = 0; i < numbers.length; i++){
+    if (numbers[i] > maxNumber) maxNumber = numbers[i]
+  }
+
+  return maxNumber;
+}
+console.log(max(1, 2, 4, 10));
