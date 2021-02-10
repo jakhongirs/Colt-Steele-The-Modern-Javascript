@@ -23,7 +23,7 @@ console.log(calc.subtract()); */
 
 /* -------------------------------------------------------------------------------------------------------- */
 
-class Profession {
+/* class Profession {
   name
   #salary
   job
@@ -47,4 +47,43 @@ const designer = new Profession('Bahodir', 800, 'designer')
 
 console.log(developer.getInfo);
 console.log(doctor.getInfo);
-console.log(designer.getInfo);
+console.log(designer.getInfo); */
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* Inheretence OOP */
+
+class Human {
+  name
+  age
+
+  constructor(name, age){
+    this.name = name
+    this.age = age
+  }
+}
+
+class Profession extends Human{
+  job
+  experience
+
+  constructor(name, age, job, experience){
+    super(name, age)
+
+    this.job = job
+    this.experience = experience
+  }
+
+  job(){
+    return this.job
+  }
+
+  experience(){
+    return this.experience
+  }
+}
+
+
+let teacher = new Profession('Alisher', 20, 'teacher', 15)
+let designer = new Profession('Bahodir', 16, 'designer', 1)
+
+console.log(designer)
