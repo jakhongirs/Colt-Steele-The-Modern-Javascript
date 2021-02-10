@@ -42,7 +42,7 @@ for(let i = 0; i < animals.length; i++){
 } */
 
 //Another Example:
-
+/* 
 const students = [
   {
     name: 'Jakhongir',
@@ -68,20 +68,20 @@ const students = [
 let totalMarks = 0;
 
 for(let i = 0; i < students.length; i++){
-  let student = students[i]
+  let student = students[i] */
 
   /* console.log(`${student.name} scored: ${student.mark}`); */
 
-  totalMarks += student.mark;
+ /*  totalMarks += student.mark;
 
   var averageMark = totalMarks / students.length;
-}
+} */
 
 /* console.log(averageMark); */
 /* -------------------------------------------------------------------------------------------------------- */
 //Nested for Loops:
 
-const gameBoard = [
+/* const gameBoard = [
   [4, 88, 15, 0],
   [11, 2, 7, 43],
   [0, 23, 3, 5],
@@ -98,6 +98,14 @@ for(let i = 0; i < gameBoard.length; i++){
 
   }
 }
-  console.log(totalScore);
+  console.log(totalScore); */
 /* -------------------------------------------------------------------------------------------------------- */
+//Intro to While Loops:
+//While condition is true run this code, when condition will be false code will stop 
+let j = 0;
 
+while(j <= 5){
+  j++
+  console.log(j);
+}
+/* -------------------------------------------------------------------------------------------------------- */
