@@ -19,9 +19,9 @@
 
     //masalan:
 
-    for(let i = 0; i <= 10; i++){
+    /* for(let i = 0; i <= 10; i++){
       console.log(i);
-    }
+    } */
 /* -------------------------------------------------------------------------------------------------------- */
 //Infinite Loops:
 
@@ -32,3 +32,51 @@
     }
 */
 /* -------------------------------------------------------------------------------------------------------- */
+
+// For Loops and Arrays:
+
+/* const animals = ['tiger', 'dog', 'cat']
+
+for(let i = 0; i < animals.length; i++){
+  console.log(i, animals[i]);
+} */
+
+//Another Example:
+
+const students = [
+  {
+    name: 'Jakhongir',
+    mark: 80,
+  },
+
+  {
+    name: 'Jonibek',
+    mark: 85,
+  },
+
+  {
+    name: 'Ulmas',
+    mark: 90,
+  },
+
+  {
+    name: 'Shahzod',
+    mark: 95,
+  },
+]
+
+let totalMarks = 0;
+
+for(let i = 0; i < students.length; i++){
+  let student = students[i]
+
+  /* console.log(`${student.name} scored: ${student.mark}`); */
+
+  totalMarks += student.mark;
+
+  var averageMark = totalMarks / students.length;
+}
+
+console.log(averageMark);
+/* -------------------------------------------------------------------------------------------------------- */
+

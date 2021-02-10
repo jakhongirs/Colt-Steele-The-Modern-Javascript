@@ -52,7 +52,8 @@ console.log(designer.getInfo); */
 /* -------------------------------------------------------------------------------------------------------- */
 /* Inheretence OOP */
 
-class Human {
+/* Bu ota class */
+/* class Human {
   name
   age
 
@@ -60,9 +61,10 @@ class Human {
     this.name = name
     this.age = age
   }
-}
+} */
 
-class Profession extends Human{
+/* child class otasidan bir xil narsalarni copy qilib */
+/* class Profession extends Human{
   job
   experience
 
@@ -72,18 +74,56 @@ class Profession extends Human{
     this.job = job
     this.experience = experience
   }
-
-  job(){
-    return this.job
-  }
-
-  experience(){
-    return this.experience
-  }
 }
 
 
 let teacher = new Profession('Alisher', 20, 'teacher', 15)
 let designer = new Profession('Bahodir', 16, 'designer', 1)
 
-console.log(designer)
+console.log(teacher) */
+/* -------------------------------------------------------------------------------------------------------- */
+
+class RGB {
+  R
+  G
+  B
+
+  constructor(Red, Green, Blue){
+    this.R = Red <= 255 && Red > 0 ? Red : 0
+    this.G = Green <= 255 && Green > 0 ? Green : 0
+    this.B = Blue <= 255 && Blue > 0 ? Blue : 0
+  }
+
+  get red(){
+    return this.R
+  }
+
+  get green(){
+    return this.G
+  }
+
+  get blue(){
+    return this.B
+  }
+
+  set red(newColor){
+    if(newColor < 255 && newColor > 0){
+      this.R = newColor
+    } else{
+      this.R
+    }
+  }
+
+  set green(newColor){
+    this.G = newColor < 255 && newColor > 0 ? newColor : this.G
+  }
+
+  set blue(newColor){
+    this.B = newColor < 255 && newColor > 0 ? newColor : this.B
+  }
+
+}
+
+let color = new RGB(125, 200, 255)
+
+console.log(color);
