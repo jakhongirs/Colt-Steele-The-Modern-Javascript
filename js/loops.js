@@ -77,6 +77,27 @@ for(let i = 0; i < students.length; i++){
   var averageMark = totalMarks / students.length;
 }
 
-console.log(averageMark);
+/* console.log(averageMark); */
+/* -------------------------------------------------------------------------------------------------------- */
+//Nested for Loops:
+
+const gameBoard = [
+  [4, 88, 15, 0],
+  [11, 2, 7, 43],
+  [0, 23, 3, 5],
+  [6, 19, 23, 28],
+]
+
+let totalScore = 0;
+
+for(let i = 0; i < gameBoard.length; i++){
+  let row = gameBoard[i]
+
+  for(let j = 0; j < row.length; j++){
+    totalScore += row[i]
+
+  }
+}
+  console.log(totalScore);
 /* -------------------------------------------------------------------------------------------------------- */
 
