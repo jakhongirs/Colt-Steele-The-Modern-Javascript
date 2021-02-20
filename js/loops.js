@@ -102,10 +102,25 @@ for(let i = 0; i < gameBoard.length; i++){
 /* -------------------------------------------------------------------------------------------------------- */
 //Intro to While Loops:
 //While condition is true run this code, when condition will be false code will stop 
-let j = 0;
+/* let j = 0;
 
 while(j <= 5){
   j++
   console.log(j);
+} */
+/* -------------------------------------------------------------------------------------------------------- */
+//Break Keyword:
+//Biz buni looplarda ishlatsak bo'ladi, ko'pincha while bilan ishlatiladi, o'sha while loop true bo'lsa break deymiz.
+
+/* const target = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+
+while(true){
+  if(target === guess) break;
+  console.log(`Target: ${target}, Guess: ${guess}`);
+  guess = Math.floor(Math.random() * 10);
 }
+
+console.log(`Target: ${target}, Guess: ${guess}`);
+console.log('Congrats you win!'); */
 /* -------------------------------------------------------------------------------------------------------- */

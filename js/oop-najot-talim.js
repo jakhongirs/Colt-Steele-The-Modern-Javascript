@@ -83,7 +83,7 @@ let designer = new Profession('Bahodir', 16, 'designer', 1)
 console.log(teacher) */
 /* -------------------------------------------------------------------------------------------------------- */
 
-class RGB {
+/* class RGB {
   R
   G
   B
@@ -126,4 +126,4 @@ class RGB {
 
 let color = new RGB(125, 200, 255)
 
-console.log(color);
+console.log(color); */
