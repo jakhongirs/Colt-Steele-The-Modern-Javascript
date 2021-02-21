@@ -124,3 +124,47 @@ while(true){
 console.log(`Target: ${target}, Guess: ${guess}`);
 console.log('Congrats you win!'); */
 /* -------------------------------------------------------------------------------------------------------- */
+/* //For Of Intro:
+let sports = ['soccer', 'basketball', 'judo', 'boxing'];
+
+for(sport of sports){
+  console.log(sport);
+}
+
+//Agar shuni biz for loop qilganimizda:
+for(let i = 0; i<sports.length; i++){
+++++-+  console.log(sports[i]);
+} */
+/* -------------------------------------------------------------------------------------------------------- */
+//For of with Objects:
+
+//Biz for of ni array yoki stringlar bilan bemalol ishlatsak bo'ladi lekin objectlarda bemalol looping qilib bulmaydi.
+//Shuning uchun biz Objectni for of loop qilmoqchi bo'lsak ularni keylarini yoki valuelarnini loop qilsak buladi.
+
+const movieReviews = {
+  Forsaj: 7,
+  MisterBean: 8,
+  Hulk: 8.5,
+  Avengers: 9
+};
+
+//shu joyda biz oddiy for of loop qilolmaymiz:
+/* for(movie of movieReviews){
+  console.log(movie); // error beradi
+} */
+
+//Biz bularni ushbu usulda qilsak boladi
+/* for(movie of Object.keys(movieReviews)){
+  console.log(movie, movieReviews[movie]);
+} */
+
+//Agar biz bularni average rating chiqormoqchi bulsak:
+let ratings = Object.values(movieReviews);
+let total = 0
+
+for(rating of ratings){
+  total += rating;
+}
+
+let avg = total / ratings.length
+console.log(avg);
