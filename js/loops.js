@@ -141,12 +141,12 @@ for(let i = 0; i<sports.length; i++){
 //Biz for of ni array yoki stringlar bilan bemalol ishlatsak bo'ladi lekin objectlarda bemalol looping qilib bulmaydi.
 //Shuning uchun biz Objectni for of loop qilmoqchi bo'lsak ularni keylarini yoki valuelarnini loop qilsak buladi.
 
-const movieReviews = {
+/* const movieReviews = {
   Forsaj: 7,
   MisterBean: 8,
   Hulk: 8.5,
   Avengers: 9
-};
+}; */
 
 //shu joyda biz oddiy for of loop qilolmaymiz:
 /* for(movie of movieReviews){
@@ -159,7 +159,7 @@ const movieReviews = {
 } */
 
 //Agar biz bularni average rating chiqormoqchi bulsak:
-let ratings = Object.values(movieReviews);
+/* let ratings = Object.values(movieReviews);
 let total = 0
 
 for(rating of ratings){
@@ -167,4 +167,30 @@ for(rating of ratings){
 }
 
 let avg = total / ratings.length
-console.log(avg);
+console.log(avg); */
+/* -------------------------------------------------------------------------------------------------------- */
+//For in:
+//For in - Loop over the keys in an object
+
+//Syntax:
+/* for(variable in object){
+  statement
+} */
+/* 
+const footballIncome = {
+  ticket: 25,
+  tv: 2000,
+  ads: 1000,
+  sponsor: 500
+}
+
+for(incomeTypes in footballIncome){
+  console.log(incomeTypes);
+}
+
+let total = 0
+for(incomeTypes in footballIncome){
+  total += footballIncome[incomeTypes]
+}
+
+console.log(total); */
